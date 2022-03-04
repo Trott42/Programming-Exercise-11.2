@@ -1,0 +1,26 @@
+package ch_11.exercise11_02;
+import java.util.Date;
+
+public class Exercise11_2 {
+
+  public static void main(String[] args) {
+    Person name = new Person();
+    name.setName("John Doe");
+    Student rank = new Student(Student.Senior);
+    name.setName("Mary Sue");
+    Employee employee = new Employee("Ann Arbor,MI", 30_500.00, new Date());
+    employee.setName("John Smith");
+    var faculty = new Faculty(new double[] {9.0, 5.0}, 5);
+    faculty.setName("Mike Trott");
+    Staff staff = new Staff("Detroit,MI",750_00.00, new Date(),"CEO");
+    staff.setName("Jay Louis");
+
+    System.out.println(name.toString());
+    System.out.println(rank.toString());
+    System.out.println(employee.toString());
+    System.out.println(faculty.toString());
+    System.out.println(staff.toString());
+
+  }
+
+}
